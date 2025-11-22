@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Act 3 - Links</title>
+<style>
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 18px;
+    border-radius: 10px;
+    width: 85%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+    text-align: left;
+}
+h2 {
+    color: #333;
+}
+p {
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 18px 0;
+}
+footer {
+    margin: 20px 0;
+    color: #555;
+    font-size: 0.9em;
+}
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #1a73e8;
+}
+xmp {
+    background: #fafafa;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: block;
+    white-space: pre-wrap;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>GROUP 3 - PT (LINKS)</h1>
+</header>
+
+<main>
+
+<section>
+<h2>Introduction</h2>
+<xmp>In HTML, the <a> tag (also called the anchor tag) is used for creating link in html. It allows you to link
+websites, other pages in your project, specific sections of the same page, email address, phone number, and even files for
+download.
+Understanding how it works is essential because links can open a lot of ways to be much more creative in your web page.</xmp>
+
+</section>
+
+
+<section>
+<h2>How To Properly Use</h2>
+To put a link somewhere in your webpage, you would first need to know how to properly use the anchor tag.
+The basic form of an anchor tag is:<br>
+<xmp><a href="URL OR FILE LOCATION">Clickable text that the reader will see</a></xmp>
+You can also link to <mark>external websites, other pages within your project, specific sections of the same page, email address,
+or phone number.</mark>
+
+</section>
+
+
+<section>
+<h2>Types of URLs</h2>
+There is two types of URL that you can use in the anchor tag, <mark>Absolute</mark> and <mark>Relative</mark> URL.
+
+<h4>What is a Absolute URL</h4>
+An <mark>"Absolute</mark> URL" is a full web address that points directly to a specific location on the internet, <mark>including the protocol</mark>(The http:// or https://),
+the domain name, and optionally the path to a file or page.<br><br>
+
+<b>Example:</b>
+<xmp><a href="https://www.google.com/">Google</a></xmp>
+
+<h4>What is a Relative URL</h4>
+An <mark>Relative</mark> URL" is a file location that is within your own project folder rather than specifying the full web address, thats why its called a "Relative URL",
+because its on the same project folder.<br><br>
+
+<b>Example:</b>
+<xmp><a href="about.html">About</a></xmp>
+
+</section>
+
+
+<section>
+<h2>Target Attribute</h2>
+By <b>default</b>, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.<br><br>
+
+<b>The target atrribute specifies where to open the linked document or page</b><br><br>
+
+The target attribute can have one of the following values:<br><br>
+
+_self - <b>The Default</b>. Opens the page or document in the same window/tab as it was clicked<br>
+_blank - Opens the document in a new window or tab<br>
+_parent - Opens the document in the parent frame<br>
+_top - Opens the document in the full body of the window<br><br>
+
+Example:
+<xmp><a href="https:www.google.com" target="_blank">Google</a></xmp>
+
+</section>
+
+
+<section>
+<h2>Other Uses of Links<h2>
+<h4>Using an Image</h4>
+<xmp>To use an image as a link, just put the <img> tag inside the <a> tag:
+
+<a href="https://example.com">
+<img src="example.jpg" alt="Description"></a></xmp>
+
+<h4>Link to an Email</h4>
+<xmp>Use "mailto:" inside the href attribute to create a link that opens designated email.
+
+Example:
+<a href="mailto:example@gmail.com">Email</a></xmp>
+
+<h4>Using a Button as a Link</h4>
+<xmp>JavaScript allows you to specify what happens at certain events, so we can use it to change what happens after clicking a button.
+
+Example:
+<button onclick="document.location='default.asp'">Example</button></xmp>
+
+<h4>Linking to a specific part of a page</h4>
+<xmp>
+The link:
+<a href="#section2">Section 2</a>
+
+The Specific Part:
+<h2 id=section2">Section 2</h2>
+
+or you can do it like this:
+The link:
+<a href="#contact">Jump to Contact section</a>
+
+The specific part:
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email: example@gmail.com</p>
+</section>
+</xmp>
+
+</section>
+
+
+<section>
+<h2>Conlusion</h2>
+<strong>There is still many more ways to utilize links in html</strong> but we went through the most basic and simple ones, and essentially, being able to utilize Links or the use
+of anchor tag can make your web page much better, such as allowing users to go to specific part of a page just by clicking the link or redirecting reader to a reference
+you want them to see and so on. Overall, <strong>understanding how to properly use links can make reader of your webpage have a smoother navigation experience and you'll also
+be bale to connect information much easier.</strong>
+
+</section>
+
+</main>
+
+<footer>
+<address>
+<p>
+Created by: <strong>Chris Bryle D. Creado</strong><br>
+<a href="mailto:chrisbryle25@gmail.com">chrisbryle<sub>25</sub>@gmail.com</a>
+</p>
+</address>
+</footer>
+
+</body>
+</html>
